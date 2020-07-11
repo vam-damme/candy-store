@@ -1,0 +1,135 @@
+header{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    background-color: #FFEB3B;
+}
+
+.dropdown{
+    height: fit-content;
+    overflow: hidden;
+    background-color: #FFC107;
+    margin: 0;
+    position: relative;
+}
+
+.plus{
+    display: inline-block;
+    width: 15%;
+}
+
+.drop{
+    display: inline-block;
+    width: 16.6%;
+    text-align: center;
+}
+
+.dropdown a{
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    width: 16.6%;
+    color:#FFFFFF;
+    padding: 14px 0px;
+    text-decoration: none;
+}
+
+.dropdown a:hover{
+    background-color: #FF9800;
+}
+
+.drop:hover{
+    background-color: #FF9800;
+}
+
+.dropdown .drop:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: #FFC107;
+    width: 16.6%;
+}
+
+.dropdown-content a{
+    display: block;
+    width: 100%;
+}
+
+footer{
+    background-color: #FFEB3B;
+    text-align: center;
+    color: #FF5722;
+    padding: 10px 0px;
+}
+
+.main{
+    height: auto;
+}
+
+.content{
+    text-align: center;
+    color: #FF5722;
+}
+
+.judul{
+    padding: 20px;
+    color: #FF5722;
+}
+
+.gambarhomeImage{
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+}
+.text-home{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.text-welcome{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.copyright{
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+@media only screen and (max-width: 500px){
+    .plus{
+        display: none;
+    }
+
+    .dropdown a{
+        padding-left: 12px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .drop{
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown .drop:hover .dropdown-content{
+        display: block;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: relative;
+        background-color: #FFC107;
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        display: block;
+        width: 100%;
+        padding-left: 8%;
+    }
+}
